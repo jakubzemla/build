@@ -1,7 +1,8 @@
 @import "vars"
+@import "fonts"
 
 body
-    font-family: sans-serif
+    +light
 
 img
     max-width: 100%
@@ -46,9 +47,11 @@ img
         font-size: 20px
         display: block
         margin-top: 12px
+        +bold
     &__button
         padding: 20px 48px
         font-size: 13px
+        +bold
 
 .main
     background-color: $greybgc
@@ -67,6 +70,7 @@ img
             padding-right: 200px
             line-height: 55px
             margin: 45px 0 20px 0
+            +bold
             @media (max-width: 1200px)
                 padding-right: 10px
             @media (max-width: 640px)
